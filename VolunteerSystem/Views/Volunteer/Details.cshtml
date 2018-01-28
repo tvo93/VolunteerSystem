@@ -13,45 +13,37 @@
         <dt>
             Last Name:
         </dt>
-
         <dd>
             @Html.DisplayFor(model => model.LastName)
         </dd>
-
         <dt>
             First Name:
         </dt>
-
         <dd>
             @Html.DisplayFor(model => model.FirstMidName)
         </dd>
         <dt>
             Birth Date:
         </dt>
-
         <dd>
             @Html.DisplayFor(model => model.BirthDate)
         </dd>
 
         <dt>
-            Jobs:
-        </dt>
-        @foreach (var item in Model.Enrollments)
-        {
-         <dd>
-            @Html.DisplayFor(modelItem => item.Job.Title)
-         </dd>
-        }
-        <dt>
             Enrollment Date:
         </dt>
-
         <dd>
             @Html.DisplayFor(model => model.EnrollmentDate)
         </dd>
-
-
-
+        <dt>
+            Jobs:
+        </dt>
+        @foreach (var item in Model.Enrollments)
+    {
+        <dd>
+            @Html.DisplayFor(modelItem => item.Job.Title)
+        </dd>
+}
 
     </dl>
 </div>
@@ -59,3 +51,4 @@
     @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
     @Html.ActionLink("Back to List", "Index")
 </p>
+
