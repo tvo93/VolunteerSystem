@@ -1,5 +1,5 @@
-﻿body {
-    padding-top: 50px;
+body {
+    padding-top: 100px;    
     padding-bottom: 20px;
 }
 
@@ -21,4 +21,32 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+.row .col-md-2 {   
+    margin-left: 30px;
+    margin-top: 50px;
+    
+}
+
+.welcome {     
+    text-align: center;
+    font-size: 20px;
+}
+
+.row {
+    padding-top: 30px;
+    height: 400px; 
+    background-image: url("/Content/Images/apples-background2.jpg");
+    margin-right: 5px;
+    margin-left: 5px;   
+    color: white;
+    text-align: center;
+}
+
+.navbar-inverse{
+    background-color: white;
+    border-color: white;
+    height: 120px;
+    font-size: 15px;    
 }
