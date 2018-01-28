@@ -1,0 +1,30 @@
+﻿@model IEnumerable<VolunteerSystem.ViewModels.EnrollmentDateGroup>
+
+@{
+    ViewBag.Title = "Volunteer Statistics";
+}
+
+<h2>Volunteer Statistics</h2>
+
+<table>
+    <tr>
+        <th>
+            Enrollment Date
+        </th>
+        <th>
+            Volunteers
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.EnrollmentDate)
+            </td>
+            <td>
+                @item.VolunteerCount
+            </td>
+        </tr>
+    }
+</table>
